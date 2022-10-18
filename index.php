@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title> Day 3 </title>
@@ -8,142 +7,142 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-        table{
+        img{
+            align-items: center;
+        }
+        h2,b,table{
             font-family: 'Roboto', sans-serif;
-            font-size: smaller;
+        }
+
+        td,tr{
+            padding-right: 20px;
+            padding-bottom: 3px;
+        }
+        .socials{
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            
+        }
+        .forms{
+            background-color: skyblue;
+            position: center;
+            height: 500px;
+            width:650px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         }
     </style>
 </head>
 
 <body>
-    <center style="background-color: rgb(134, 215, 199);">
-        <div class="container">
-            <p>&nbsp;</p>
-            <div class="row justify-content-md-center">
-                <div class="col col-lg-9">
-                    <div class="card h-20" style="padding: 10pt; border-radius: 20px; background-color: red;">
-                        <h2 style="color: white;">BELUM SELESAI</h2>
-                    </div>
-                </div>
-            </div>
-            <p>&nbsp;</p>
-            <div class="row justify-content-md-center">
-                <div class="col col-lg-9">
-                    <div class="card h-20" style="padding: 10pt; border-radius: 20px;">
-                        <h2>Multimedia</h2>
-                        <p>Music, Video & Document</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-md-center" style="padding-top: 10px;">
-                <div class="col col-lg-9">
-                    <div class="card h-20" style="padding: 10pt; border-radius: 20px;">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#form">Input Form</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p></p>
-            <div class="row justify-content-md-center" style="padding-top: 10px;">
-                <div class="col col-lg-9">
-                    <div class="card h-20" style="padding: 10pt; border-radius: 20px;">
-                        <div class="row justify-content-md-center" style="height: max-content">
-                            <form id="form" style="width: 100%; border-radius: 20px;" method="post" action="index_output.php">
-                                <center>
-                                    <fieldset>
-                                        <legend>Input Form</legend>
-                                        <ol>
-                                            <li>
-                                                <label for="name">Full Name</label>
-                                                <input id="name" name="name" type="text" placeholder="Full name" required autofocus>
-                                            </li>
-                                            <li>
-                                                <label for="email">Email"</label>
-                                                <input id="email" name="email" type="email" placeholder="example@domain.com" required>
-                                            </li>
-                                        </ol>
-                                        <ol>
-                                            <li>
-                                                <label for="address">Address</label>
-                                                <textarea id="address" name="address" rows="5" required></textarea>
-                                            </li>
-                                        </ol>
-                                        <ol>
-                                            <li>
-                                                <label>Card Type</label>
-                                                <center>
-                                                <ol style="width: 20%;">
-                                                    <input type="radio" name="cardtype" value="Visa">Visa
-                                                </ol>
-                                                <ol style="width: 20%;">
-                                                    <input type="radio" name="cardtype" value="Radio 3">MasterCard
-                                                </ol>
-                                                </center>
-                                            </li>
-                                            <li>
-                                                <label for="cardnumber">Card number</label>
-                                                <input id="cardnumber" name="cardnumber" type="text" required>
-                                            </li>
-                                            <li>
-                                                <label for="secure">Security code</label>
-                                                <input id="secure" name="secure" type="text" required>
-                                            </li>
-                                            <li>
-                                                <label for="namecard">Name on card</label>
-                                                <input id="namecard" name="namecard" type="text" placeholder="Exact name as on the card" required>
-                                            </li>
-                                        </ol>
-                                        <ol>
-                                            <li>
-                                                <label for="Image" class="form-label">Upload Image</label>
-                                                <input class="form-control" type="file" id="formFile" onchange="preview()">
-                                                <img id="frame" src="" class="img-fluid" />
-                                                <script>
-                                                    function preview() {
-                                                        frame.src = URL.createObjectURL(event.target.files[0]);
-                                                    }
-                                                    function clearImage() {
-                                                        document.getElementById('formFile').value = null;
-                                                        frame.src = "";
-                                                    }
-                                                </script>
-                                            </li>
-                                        </ol>
-                                        <ol>
-                                            <li>
-                                                <div class="form-check">
-                                                    <center style="padding-right: 25px;">
-                                                        <input type="checkbox" value="1" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                            I am accept the "User Agreement"
-                                                        </label>
-                                                    </center>
-                                                </div>
-                                            </li>
-                                        </ol>
-                                    </fieldset>
-                                    <fieldset>
-                                        <button type="submit">Submit</button>
-                                    </fieldset>
-                                </center>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </center>
+<center>
+<div class="forms">
+    <table align="center">
+        <form method="POST" action="index_output.php">
+           <tr>
+            <th colspan="2" style="padding-bottom: 10px;"><b>Fill The Form Below</b></th>
+           </tr>
+           <tr>
+            <td>
+                Full Name :
+            </td>
+            <td>
+                <input id="name" name="name" type="text" placeholder="Full name" required autofocus>
+            </td>
+           </tr>
+           <tr>
+            <td>
+                Email :
+            </td>
+            <td>
+                <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+            </td>
+           </tr>
+           <tr>
+            <tr>
+                <td>
+                    Address :
+                </td>
+                <td>
+                    <textarea id="address" name="address" rows="5" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Telephone :
+                </td>
+                <td>
+                    <input id="tel" name="tel" type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Age:
+                </td>
+                <td>
+                    <input id="age" name="age" type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender :
+                </td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <td>
+                Occupation :
+            </td>
+            <td>
+                <input id="occ" name="occ" type="text" required>
+            </td>
+           </tr>
+           <tr>
+            <td>
+                Account Number :
+            </td>
+            <td>
+            <input id="num" name="num" type="num" required>
+            </td>
+           </tr>
+           <tr>
+            <td>
+                Upload Evidence of Transfer :
+            </td>
+            <td>
+            <input class="form-control" type="file" id="formFile" onchange="preview()">
+                <script>
+                    function preview() {
+                        frame.src = URL.createObjectURL(event.target.files[0]);
+                    }
+                    function clearImage() {
+                        document.getElementById('formFile').value = null;
+                        frame.src = "";
+                    }
+                </script>
+            </td>
+           </tr>
+           <tr>
+           <td>I Accept The User Agreements</td>
+            <td><input type="checkbox"></td><br>
+            </tr>
+            <td><button type="submit">Submit</button><br></td>
+            <tr>
+        </form>
+    </table>
+    <table class="socials">
+            <tr>
+            
+            <td><a href="https://www.instagram.com/vitoanandq/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="ig logo"  width="20" height="20"></a></td>
+            <td><a href="https://github.com/vitoananda"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo"  width="20" height="20"></a></td>
+           </tr>
+    </table>
+</div>
+</center>
 </body>
 </html>
