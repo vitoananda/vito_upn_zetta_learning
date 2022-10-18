@@ -60,7 +60,7 @@
                 <div class="col col-lg-9">
                     <div class="card h-20" style="padding: 10pt; border-radius: 20px;">
                         <div class="row justify-content-md-center" style="height: max-content">
-                            <form id="form" style="width: 100%; border-radius: 20px;" method="post" action="Adyatma_day5_output.php">
+                            <form id="form" style="width: 100%; border-radius: 20px;" method="post" action="index_output.php">
                                 <center>
                                     <fieldset>
                                         <legend>Input Form</legend>
@@ -129,7 +129,7 @@
                                                 </script>
                                             </li>
                                         </ol>
-                                        <!-- Adyatma Arkaan Pradipa -->
+            
                                         <ol>
                                             <li>
                                                 <div class="form-check">
