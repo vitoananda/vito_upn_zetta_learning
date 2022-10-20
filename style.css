@@ -19,11 +19,12 @@ body{
 
 .card {
     transition: 0,1s;
+    /* absolute length */
     width: 350px;
-    height:400x;
     border-radius: 5px;
     margin-top: 0;
     margin-left: 1rem;
+    background-color: #222222;
    
     
   }
@@ -63,10 +64,15 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  
+   
    
   }
 
   .margin-top-bot{
+    /* viewport length */
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -90,7 +96,8 @@ body{
   border-radius: 10px;
  }
   footer{
-   width: 100%;
+    /* relative length */
+    width: 100%; 
     bottom: 0;
     background: #44d62c;
     padding-top: 10px;
