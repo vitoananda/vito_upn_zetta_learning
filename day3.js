@@ -1,4 +1,11 @@
-
+/**
+ * @param {Book} book
+ * @param {Number} discount
+ * @param {Number} tax
+ * @param {Number} stock
+ * @param {Number} order
+ * @param {Number} credit
+ */
 
 
  function transaction(book, discount, tax, stock, order, credit){
