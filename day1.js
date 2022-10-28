@@ -1,7 +1,8 @@
-function returntext(text, index1, index2) {
-    return text;
+function Slicer(text, first_index, last_index) {
+    var result = "";
+    for (var i = first_index; i < last_index; i++) {
+        result += text[i];
+    }
+    return result;
 }
-var text = "Learning Typescript is different than Javascript";
-var index1 = 9;
-var index2 = 19;
-console.log(returntext(text, index1, index2));
+console.log(Slicer("Learning Typescript is different than Javascript", 9, 19));
