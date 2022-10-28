@@ -6,8 +6,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modul2.component.scss']
 })
 export class Modul2Component implements OnInit {
+  user = ['Victor','Jeff','Robert'];
+  currentStatus1 = 'offline';
+  currentStatus2 = 'offline';
+  currentStatus3 = 'offline';
+  status = true;
 
-  constructor() { }
+  changeStatus1(){
+    this.currentStatus1 = "online";
+  }
+  changeStatus2(){
+    this.currentStatus2 = "online";
+  }
+  changeStatus3(){
+    this.currentStatus3 = "online";
+  }
+
+  constructor() { 
+  }
+
+  getColor1(){
+    return this.currentStatus1 === 'online' ? 'green' : 'red';
+  }
+  getColor2(){
+    return this.currentStatus2 === 'online' ? 'green' : 'red';
+  }
+  getColor3(){
+    return this.currentStatus3 === 'online' ? 'green' : 'red';
+  }
 
   ngOnInit(): void {
   }
