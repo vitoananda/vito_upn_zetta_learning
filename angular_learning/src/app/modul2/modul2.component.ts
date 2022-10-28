@@ -25,15 +25,6 @@ export class Modul2Component implements OnInit {
   constructor() { 
   }
 
-  getColor1(){
-    return this.currentStatus1 === 'online' ? 'green' : 'red';
-  }
-  getColor2(){
-    return this.currentStatus2 === 'online' ? 'green' : 'red';
-  }
-  getColor3(){
-    return this.currentStatus3 === 'online' ? 'green' : 'red';
-  }
 
   ngOnInit(): void {
   }
