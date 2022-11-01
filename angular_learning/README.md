@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # AngularLearning
+=======
+# Zetta
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 

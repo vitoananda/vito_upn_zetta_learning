@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "angular-learning",
+=======
+  "name": "zetta",
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

@@ -25,7 +25,11 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
+<<<<<<< HEAD
       dir: require('path').join(__dirname, './coverage/angular_learning'),
+=======
+      dir: require('path').join(__dirname, './coverage/zetta'),
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
       subdir: '.',
       reporters: [
         { type: 'html' },

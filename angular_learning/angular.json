@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "angular_learning": {
+=======
+    "zetta": {
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +21,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/angular_learning",
+=======
+            "outputPath": "dist/zetta",
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +77,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "angular_learning:build:production"
             },
             "development": {
               "browserTarget": "angular_learning:build:development"
+=======
+              "browserTarget": "zetta:build:production"
+            },
+            "development": {
+              "browserTarget": "zetta:build:development"
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +95,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "angular_learning:build"
+=======
+            "browserTarget": "zetta:build"
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
           }
         },
         "test": {
@@ -105,6 +124,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "4d13e3c1-d82b-401f-acc8-60c64e47eda8"
+=======
+    "analytics": "ddd6f88c-4fa7-45a7-87ae-862d0f7af736"
+>>>>>>> 723064a61b8016bea7304f50e2c19aa8edc604e8
   }
 }
