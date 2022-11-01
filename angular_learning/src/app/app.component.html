@@ -1,0 +1,16 @@
+<div class="container">
+  <app-items 
+  (taskCreated)="onTaskAdded($event)"
+  (groupTaskCreated)="onGroupTaskAdded($event)"
+  ></app-items>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-items-input *ngFor="let taskElement of taskElements"
+      [taskElement]="taskElement"></app-items-input>
+      <button
+      class="btn btn-danger" (click)="onDestroy()">Clear</button>
+    </div>
+    
+  </div>
+</div>
