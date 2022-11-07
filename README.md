@@ -1,4 +1,4 @@
-<ul>
+<ol>
 <h2>Report</h2>
 <li>Instance komponen di Angular memiliki siklus hidup yang dimulai saat Angular membuat instance kelas komponen dan merender tampilan komponen bersama dengan tampilan anaknya. Siklus hidup berlanjut dengan deteksi perubahan, saat Angular memeriksa untuk melihat kapan properti terikat data berubah, dan memperbarui tampilan dan instans komponen sesuai kebutuhan. Siklus hidup berakhir ketika Angular menghancurkan instance komponen dan menghapus template yang dirender dari DOM.
 
@@ -13,7 +13,7 @@ Aplikasi sudut dapat menggunakan metode kait siklus hidup untuk memanfaatkan per
 <li>Dipanggil sekali setelah ngAfterContentChecked() pertama.</li>
 <li>Dipanggil sebelum ngOnInit() (jika komponen memiliki input terikat) dan setiap kali satu atau lebih properti input terikat data berubah.</li>
 <li>Urutannya :
-<ul type = "a">
+<ol type = "a">
 <li>ngOnChanges</li>
 <li>ngOnInit</li>
 <li>ngDoCheck</li>
@@ -21,6 +21,6 @@ Aplikasi sudut dapat menggunakan metode kait siklus hidup untuk memanfaatkan per
 <li>ngAfterContentChecked</li>
 <li>ngAfterViewInit</li>
 <li>ngAfterViewChecked</li>
-</ul>
+</ol>
 </li>
-</ul>
+</ol>
