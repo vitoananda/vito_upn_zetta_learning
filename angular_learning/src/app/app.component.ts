@@ -7,7 +7,10 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  taskElements = [{type:'individual',name:'First Assignment',content:'Create An Angular Project'}];
+  taskElements = [
+    {type:'individual',name:'First Assignment',content:'Create An Angular Project'},
+    {type:'group',name:'First Group Assignment',content:'Create An Angular Project'}
+  ];
  
   onTaskAdded(taskData: {taskName:string,taskContent:string}) {
     this.taskElements.push({
