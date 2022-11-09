@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,30 +6,26 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  taskElements = [
-    {type:'individual',name:'First Assignment',content:'Create An Angular Project'},
-    {type:'group',name:'First Group Assignment',content:'Create An Angular Project'}
+  accounts = [
+    {
+      name: 'Master Account',
+      status: 'active'
+    },
+    {
+      name: 'Testaccount',
+      status: 'inactive'
+    },
+    {
+      name: 'Hidden Account',
+      status: 'unknown'
+    }
   ];
- 
-  onTaskAdded(taskData: {taskName:string,taskContent:string}) {
-    this.taskElements.push({
-      type: 'individual',
-      name: taskData.taskName,
-      content: taskData.taskContent
-    });
+
+  onAccountAdded(newAccount: {name: string, status: string}) {
+    this.accounts.push(newAccount);
   }
 
-  onGroupTaskAdded(groupTaskData: {taskName:string,taskContent:string}) {
-    this.taskElements.push({
-      type: 'group',
-      name: groupTaskData.taskName,
-      content: groupTaskData.taskContent
-    });
+  onStatusChanged(updateInfo: {id: number, newStatus: string}) {
+    this.accounts[updateInfo.id].status = updateInfo.newStatus;
   }
-
-  onDestroy(){
-    this.taskElements.splice(0,100);
-  }
-
-
 }

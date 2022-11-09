@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ItemsComponent } from './items/items.component';
-import { ItemsInputComponent } from './items-input/items-input.component';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemsComponent,
-    ItemsInputComponent
+    AccountComponent,
+    NewAccountComponent,
   ],
   imports: [
     BrowserModule,
