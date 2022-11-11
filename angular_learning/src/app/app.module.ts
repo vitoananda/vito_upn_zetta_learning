@@ -13,6 +13,14 @@ import { ManagerComponent } from './managers/manager/manager.component';
 import { ProductsComponent } from './products/products.component';
 import { EditProductsComponent } from './products/edit-products/edit-products.component';
 import { ProductComponent } from './products/product/product.component';
+import { ProductsService } from './products/product.service';
+import { RouterModule, Routes } from "@angular/router";
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'managers', component: ManagersComponent },
+  { path: 'products', component: ProductComponent },  
+];
 
 @NgModule({
   declarations: [
@@ -30,9 +38,10 @@ import { ProductComponent } from './products/product/product.component';
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [AccountService, LoggingService],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
